@@ -1,72 +1,96 @@
-<!-- Notas: 
-
-    #Novedades
-    ----
-    * Se cambió el texto "Logo" a la imagen correspondiente
-    * El codigo fue re-estructurado (Nuevamente jejeje) para dejar unicamente la parte semantica, quite los centers y los ubiqué en styles.css
-    * Se agregó un efecto de transición por medio de un hoover tanto al pasar, como al quitar el mouse de una nav para que no haya un corte
-    * Se Hizo una barra para asemejarce el diseño que tengo en mente
-    ----
-    Dificultades: 
-    ----
-    Al intentar recrear la NavBar blanca del projecto en Fiddler, se me ocurrió usar divs vacíos para crearle un fondo blanco y simularlo, en la próxima entrega, esto estaría solucionado y sería un elemento en bloque común y prolijo
-    ----
-    Cosas aprendidas:
-    * Gracias a conocer cómo funciona un código HTML, puedo solucionar problemas de Triggering en Tag Manager y fallas de medición en Analytics Universal y 4 (Doy soporte técnico en GAnalytics, Tag Manager y Ads)
-
-    *Dependiendo de donde apoyes el mouse con el inspector, este te dice la ubicación exacta, pude solucionar un subrayado en la Nav Bar gracias a este descubrimiento
-    ----
-    Cosas para arregladas:
-    ----
-    *Reestructuración de Nav Bar
-    *Centrado de Logotipo
-    *Usar Comando BG-Collor todos en blanco se rompe la nav Bar (Parchado, sigo investigando para mandarlo a restructurar) 
-    ----
-                                                                            Le agradezco el tiempo que se toman en leer este código
-
-     -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Inicio</title>
-    <link rel="icon" type="image/x-icon" href="./assets/Logo_Empresa.ico">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/3c7b9713fb.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
- 
     <header>
-    <nav>
-        <a class="logo" href="index.html">
-            <img id="Glitch" src="./assets/Logo_Empresa.gif" alt="LogoLoco">
-        </a>
-    <ul id="Menu_Playlist">
-         <li> <a href="index.html">Inicio</a> </li>
-         <li> <a href="Pages/noticias.html">Noticias</a> </li>
-         <li> <a href="Pages/lanzamientos.html">Lanzamientos</a> </li>
-         <li> <a href="Pages/eventos.html">Eventos</a> </li>
-         <li> <a href="Pages/industria.html">Industria</a> </li>
-         <li> <a href="Pages/destacados.html">Destacados</a> </li>
-         <li> <a href="Pages/entrevistas.html">Entrevistas</a> </li>
-         <li> <a href="Pages/playlist.html">Playlist</a> </li>
-         <li><a href="./Foro_Grid/index.html">Foro (Nuevo)</a> </li>
-         <li><a href="./Bootstrap/index.html">Viajes a Festivales</a></li>
-     </ul>
-    </nav>    
-    
+        <div class="cuerpo_logo">
+            <a class="logo" href="#"> <img src="./images/Music_Mag.png" alt="..." class="logo"> </a>
+        </div>
+
+        <nav class="menu_final">
+            <ul class="menu_items">
+                <li class="active"> <a href="#"> Inicio</a> </li>
+                <li> <a href="./paginas/noticias.html">Noticias</a></li>
+                <li> <a href="./paginas/lanzamientos.html">Lanzamientos</a></li>
+                <li> <a href="./paginas/eventos.html">Eventos</a></li>
+                <li> <a href="./paginas/industria.html">Industria</a></li>
+                <li> <a href="./paginas/destacados.html">Destacados</a></li>
+                <li> <a href="./paginas/entrevistas.html">Entrevistas</a></li>
+                <li> <a href="./paginas/playlist.html">Playlists</a></li>
+                <li> <a href="./paginas/foro.html">Foro</a></li>
+                <li> <a href="./paginas/viajes_festivales.html">Viajes a festivales</a></li>
+            </ul>
+            <span class="btn_menu">
+                <i class="fa-solid fa-burger"></i>
+            </span>
+        </nav>
     </header>
-
-    <div class="TeI">
-        <h3 id="TextoCabeza">Ultra Music Festival ha mostrado su lineUp que habra en Miami</h3>
-
-       <img id="Imagen_Ultra" src="https://ultramusicfestival.com/wp-content/uploads/2022/02/Ultra_Miami_2022_standalone_logo-billing-scaled.jpg" alt="">
+    <div class="resumen">
+        <div class="cartas">
+            <img src="./images/recitales.jpg" alt="recitales">
+            <h4>Noticias</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/noticias.html">Leer Mas</a>
+        </div>
+         <div class="cartas">
+            <img src="./images/playlists.jpg" alt="playlists">
+            <h4>Lanzamientos</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/lanzamientos.html">Leer Mas</a>
+        </div>       
+        <div class="cartas">
+            <img src="./images/noticias.jpg" alt="playlists">
+            <h4>Eventos</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/eventos.html">Leer Mas</a>
+        </div>       
+        <div class="cartas">
+            <img src="./images/playlists.jpg" alt="playlists">
+            <h4>Industria</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/industria.html">Leer Mas</a>
+        </div>       
+        <div class="cartas">
+            <img src="./images/entrevistas.jpg" alt="entrevistas">
+            <h4>Destacados</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/destacados.html">Leer Mas</a>
+        </div>
+        <div class="cartas">
+            <img src="./images/lanzamientos.jpg" alt="lanzamientos">
+            <h4>Entrevistas</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/entrevistas.html">Leer Mas</a>
+        </div>
+        <div class="cartas">
+            <img src="./images/playlists.jpg" alt="recitales">
+            <h4>Playlists</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/pages/playlist.html">Leer Mas</a>
+        </div>
+         <div class="cartas">
+            <img src="./images/foro.jpg" alt="playlists">
+            <h4>Foro</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/Foro_Grid/index.html">Leer Mas</a>
+        </div>       
+        <div class="cartas">
+            <img src="./images/viajes.jpg" alt="playlists">
+            <h4>Viajes a festivales</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, recusandae architecto?</p>
+            <a href="./antiguo_codigo/Bootstrap/index.html">Leer Mas</a>
+        </div>       
     </div>
-
-</div>
+    
 </body>
 </html>

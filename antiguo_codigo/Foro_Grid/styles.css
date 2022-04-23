@@ -1,0 +1,124 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://images.wallpapersden.com/image/download/cool-4k-pattern_bGduZWyUmZqaraWkpJRobWllrWdma2U.jpg);
+  }
+
+/* HEADER */
+
+.title img {
+    padding: 20px 0;
+
+}
+
+/* contenedor */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    /* grid-template-columns: repeat(4, 1fr) 3%; */
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.contenedor>.header, .contenedor>.contenido, .contenedor>.barra_lateral, .contenedor>.footer, .contenedor>div {
+    background: rgb(34, 34, 34);
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.contenedor>.header, .contenedor>.footer {
+    grid-column: 1/-1;
+    background-color: #00365f;
+    color: #ffffff;
+    align-items: center;
+
+}
+.contenedor > .titulo_recitales{
+    grid-column: 1/-1;
+    background-color: #00365f;
+    color: #ffffff;
+    text-align: center;
+}
+img {
+  max-block-size: 90%;
+  display: flex;
+  align-content: center;
+  justify-self: center;
+}
+
+.contenedor>.contenido {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.contenido>.articulo {
+    background: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9
+}
+
+.contenido .articulo h1,
+.contenido .articulo p {
+    padding: 10px;
+}
+
+.contenedor>.barra_lateral {
+    grid-column: span 2;
+    grid-row: span 4;
+    background: #002142;
+    color: #ffffff;
+    display: list-item;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .barra_lateral img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contenedor>.publicaciones {
+    background: #2d3436;
+    color: #ffffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.contenedor>.publicaciones:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .contenedor .contenido {
+        grid-column: 1 / -1;
+    }
+    .contenedor .barra_lateral {
+        grid-column: 1 / 6;
+    }
+
+    .contenedor .publicaciones {
+        grid-column: 1/-1;
+        text-decoration: none;
+    }
+}

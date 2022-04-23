@@ -1,0 +1,71 @@
+<!-- Notas: 
+
+    #Novedades
+    ----
+    * Se cambió el texto "Logo" a la imagen correspondiente
+    * El codigo fue re-estructurado (Nuevamente jejeje) para dejar unicamente la parte semantica, quite los centers y los ubiqué en styles.css
+    * Se agregó un efecto de transición por medio de un hoover tanto al pasar, como al quitar el mouse de una nav para que no haya un corte
+    * Se Hizo una barra para asemejarce el diseño que tengo en mente
+    ----
+    Dificultades: 
+    ----
+    Al intentar recrear la NavBar blanca del projecto en Fiddler, se me ocurrió usar divs vacíos para crearle un fondo blanco y simularlo, en la próxima entrega, esto estaría solucionado y sería un elemento en bloque común y prolijo
+    ----
+    Cosas aprendidas:
+    * Gracias a conocer cómo funciona un código HTML, puedo solucionar problemas de Triggering en Tag Manager y fallas de medición en Analytics Universal y 4 (Doy soporte técnico en GAnalytics, Tag Manager y Ads)
+
+    *Dependiendo de donde apoyes el mouse con el inspector, este te dice la ubicación exacta, pude solucionar un subrayado en la Nav Bar gracias a este descubrimiento
+    ----
+    Cosas para arreglar:
+    ----
+    *Reestructuración de Nav Bar
+    *Centrado de Logotipo
+    *Al usar BG-Color en *, se me rompe el diseño de la página, esto será arreglado en la próxima entrega
+    ----
+                                                                            Le agradezco el tiempo que se toman en leer este código
+
+     -->
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="../styles.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+         <title>Industria - Music Mag</title>
+         <link rel="icon" type="image/x-icon" href="./assets/Logo_Empresa.ico">
+     </head>
+     <body>
+      
+         <header>
+         <nav>
+             <a class="logo" href="index.html">
+                 <img id="Glitch" src="../assets/Logo_Empresa.gif" alt="LogoLoco">
+             </a>
+         <ul id="Menu_Playlist">
+             <li> <a href="../index.html">Inicio</a> </li>
+             <li> <a href="noticias.html">Noticias</a> </li>
+             <li> <a href="lanzamientos.html">Lanzamientos</a> </li>
+             <li> <a href="eventos.html">Eventos</a> </li>
+             <li> <a href="industria.html">Industria</a> </li>
+             <li> <a href="destacados.html">Destacados</a> </li>
+             <li> <a href="entrevistas.html">Entrevistas</a> </li>
+             <li> <a href="playlist.html">Playlist</a> </li>
+             <li><a href="../Foro_Grid/index.html">Foro (Nuevo)</a> </li>
+         </ul>
+         </nav>
+         </header>
+         <div class="TeI">
+             <h3 id="TextoCabeza">Rezz, una de las artistas más talentosas de la industria de la electrónica, quiso compartir el mensaje que le dejó Madeon, que le confesó ser fan absoluto de su trabajo</h3>
+             <h3 id="TextoCabeza">Rezz es aire fresco en la electrónica. Acostumbrados a ver como los grandes artistas de la escena se van viciando e involucionando hacia esa espiral comercial en el que todo vale con tal de capitanear las listas de éxitos, ver a músicos como Rezz nos hace pensar que aún existe pureza dentro de este gremio.</h3>
+             <h3 id="TextoCabeza">Pues bien. Isabelle, en este ascenso meteórico que ha conseguido en tan poco tiempo, ha recibido muchos, muchísimos reconocimientos desde todos los estamentos de la industria, pero ella parece que mantiene su status, su esencia, y no se deja seducir por la fama.</h3>
+
+
+             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D1466548580090790%26id%3D430484893697169&show_text=true&width=500" width="500" height="590" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      
+         </div>
+     </body>
+     </html>
